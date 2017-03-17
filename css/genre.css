@@ -1,0 +1,63 @@
+/*ELEMENTS*/
+
+body {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 12pt;
+    width: 100%;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Play', sans-serif;
+}
+
+
+/*BOOTSTRAP MODS*/
+
+.container {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+
+/*CUSTOM*/
+.car-headings {
+  display: inline-block;
+}
+.top-car-heading {
+  text-align: center;
+  display:inline-block;
+  position: absolute;
+  top: 10%;
+  right: 33%;
+  left: 33%;
+  z-index: 1;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.full-screen {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*YT VID*/
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}

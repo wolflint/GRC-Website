@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GRC Arcade</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <meta name="description" content="How HTML accesses CSS, box model and scripting.">
+    <link rel="shortcut icon" href="assets/titleicon.png" />
+    <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed|Play|Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="css/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <!--STYLESHEETS-->
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/genre.css" type="text/css" rel="stylesheet">
+    <link href="css/master.css" type="text/css" rel="stylesheet">
+
+    <style>
+    body {
+      background-color: rgb(58, 38, 13);
+      background-image: url(css/arcadebackground.jpeg);
+  }
+
+  ::selection {
+     background: #CF8934;
+     color: #fff;
+     /* WebKit/Blink Browsers */
+ }
+
+ ::-moz-selection {
+     background: #CF8934;
+     color: #fff;
+     /* Gecko Browsers */
+ }
+
+      a:hover, a:focus {
+          color: #CF8934;
+      }
+
+         a {
+           color: #fff;
+         }
+     </style>
+</head>
+
+<body>
+    <!--NAVBAR TOP-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbartop" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Games Review Centre</a>
+            </div>
+
+            <div class="collapse navbar-collapse pull-right" id="navbartop">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rpg.html">RPG</a></li>
+                    <li><a href="fps.html">FPS</a></li>
+                    <li class="active"><a href="arcade.html">Arcade</a></li>
+                    <li><a href="sim.html">Sim</a></li>
+                    <li><a href="sport.html">Sport</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!--END NAVBAR TOP-->
+
+    <!--CONTENT-->
+    <!--CAROUSEL-->
+    <div id="mycarousel" class="carousel slide" data-ride="carousel">
+        <div class="top-car-heading">
+            <a href="#review">
+                <h1>Tap Tap Dash</h1>
+                <h1>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </h1>
+            </a>
+        </div>
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#mycarousel" data-slide-to="1"></li>
+            <li data-target="#mycarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item">
+                <img src="assets/screenshots/rick1.png" alt="">
+                <div class="carousel-caption">
+                    <h3 class="car-headings">POP</h3>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/screenshots/rick2.png" alt="Second Image">
+                <div class="carousel-caption">
+                    <h3 class="car-headings">WOAH!</h3>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/screenshots/rick3.png" alt="Third Image">
+                <div class="carousel-caption">
+                    <h3 class="car-headings">WOW!</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END CAROUSEL-->
+
+    <!--GAMEREVIEW-->
+    <div class="container">
+        <div class="col-md-12">
+            <h1 id="review">A game for the brainless...</h1>
+            <p>
+                Rick and Morty: Jerry’s Game is a simple arcade game developed by [adult swim] games. The game is supported on both Android and iOS devices. The game mechanics are extremely simple: tap the screen to pop balloons, reach balloon popping goals to get rewards and spend balloons to unlock useless features.
+            </p>
+
+            <p>
+                The purpose of this game is to mock other popular mobile games *cough* *cough* Candy Crush *cough*. However, the gameplay is actually quite relaxing. This is most likely due to the simplicity and the cheers you receive for reaching goals. This game is also quite useful if you want to entertain a child for a couple of hours.
+            </p>
+<!--TRAILER VIDEO-->
+            <div class="video-container">
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/yR1aZZOT3wI" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <!--END TRAILER VIDEO-->
+        </div>
+        <!--END GAMEREVIEW-->
+
+
+        <!--PLATFORM SUPPORT INDICATOR-->
+        <div class="col-md-3">
+            <h1>PLATFORMS:</h1>
+        </div>
+        <div class="col-md-5">
+            <img class="platform-img" src="assets/platforms/xb-no.png" alt="">
+            <img class="platform-img" src="assets/platforms/ps-no.png" alt="">
+            <img class="platform-img" src="assets/platforms/pc-no.png" alt="">
+            <img class="platform-img" src="assets/platforms/mobile-yes.png" alt="">
+        </div>
+        <!--END PLATFORM SUPPORT INDICATOR-->
+    </div>
+    <!--END CONTENT-->
+
+    <!--FOOTER-->
+    <div class="navbar navbar-inverse navbar-static-bottom">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand hidden-xs hidden-smed" href="#">Games Review Centre</a>
+            </div>
+            <div class="pull-right">
+                <div class="text-center center-block">
+                    <a href="https://www.facebook.com/"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                    <a href="https://twitter.com/"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+                    <a href="https://plus.google.com/"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+                    <a href="https://www.youtube.com/"><i id="social-yt" class="fa fa-youtube-play fa-3x social"></i></a>
+                    <a href="https://www.reddit.com/"><i id="social-rd" class="fa fa-reddit-square  fa-3x social"></i></a>
+                    <a href="#contact" data-toggle="modal"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END FOOTER-->
+
+    <!--MODAL-->
+    <div class="modal fade" id="contact" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form class="form-horizontal">
+                    <div class="modal-header">
+                        <h4 align="center">Contact me</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="form-group">
+                            <label for="contact-name" class="col-lg-2 control-label">Name</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="contact-name" placeholder="Full Name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email" class="col-lg-2 control-label">Email</label>
+                            <div class="col-lg-10">
+                                <input type="email" class="form-control" id="contact-email" placeholder="you@example.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-msg" class="col-lg-2 control-label">Message</label>
+                            <div class="col-lg-10">
+                                <textarea class="form-control" rows="10"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success" type="submit">Submit</button>
+                        <a class="btn btn-default" data-dismiss="modal">Close</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--END MODAL-->
+
+    <!--SCRIPT-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/myscripts.js"></script>
+    <!--END SCRIPT-->
+</body>
+
+</html>

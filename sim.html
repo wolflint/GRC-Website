@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GRC Sim</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <meta name="description" content="How HTML accesses CSS, box model and scripting.">
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/master.css" type="text/css" rel="stylesheet">
+    <link href="css/genre.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="css\font-awesome.min.css" type="text/css">
+    <link rel="shortcut icon" href="assets/titleicon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed|Play|Press+Start+2P" rel="stylesheet">
+
+    <style>
+    body {
+        background-color: rgb(70, 8, 55);
+        background-image: url(css/simbackground.jpeg);
+    }
+    ::selection {
+           background: #AC1688;
+           color: #fff;
+           /* WebKit/Blink Browsers */
+       }
+
+       ::-moz-selection {
+           background: #AC1688;
+           color: #fff;
+           /* Gecko Browsers */
+       }
+
+        a:hover, a:focus {
+            color: #AC1688;
+        }
+
+        a {
+          color: rgb(51, 51, 51);
+        }
+        .rounded-border:hover, .rounded-border:focus {
+            border-color: #AC1688;
+        }
+    </style>
+</head>
+
+<body>
+    <!--NAVBAR TOP-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbartop" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Games Review Centre</a>
+            </div>
+
+            <div class="collapse navbar-collapse pull-right" id="navbartop">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="rpg.html">RPG</a></li>
+                    <li><a href="fps.html">FPS</a></li>
+                    <li><a href="arcade.html">Arcade</a></li>
+                    <li class="active"><a href="sim.html">Sim</a></li>
+                    <li><a href="sport.html">Sport</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!--END NAVBAR TOP-->
+
+    <!--CONTENT-->
+    <div class="container">
+        <a href="simreview1.html">
+            <h1>Don't Starve</h1>
+            <img class="img-responsive rounded-border" src="assets/screenshots/starve.png" alt="">
+        </a>
+    </div>
+    <div class="container">
+        <a href="simreview2.html">
+            <h1>Reigns</h1>
+            <img class="img-responsive rounded-border" src="assets/screenshots/reigns.jpg" alt="">
+        </a>
+    </div>
+    <!--END CONTENT-->
+
+    <!--FOOTER-->
+    <div class="navbar navbar-inverse navbar-static-bottom">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand hidden-xs hidden-smed" href="#">Games Review Centre</a>
+            </div>
+            <div class="pull-right">
+                <div class="text-center center-block">
+                    <a href="https://www.facebook.com/"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                    <a href="https://twitter.com/"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+                    <a href="https://plus.google.com/"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+                    <a href="https://www.youtube.com/"><i id="social-yt" class="fa fa-youtube-play fa-3x social"></i></a>
+                    <a href="https://www.reddit.com/"><i id="social-rd" class="fa fa-reddit-square  fa-3x social"></i></a>
+                    <a href="#contact" data-toggle="modal"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END FOOTER-->
+
+    <!--MODAL-->
+    <div class="modal fade" id="contact" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form class="form-horizontal">
+                    <div class="modal-header">
+                        <h4 align="center">Contact me</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="form-group">
+                            <label for="contact-name" class="col-lg-2 control-label">Name</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="contact-name" placeholder="Full Name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email" class="col-lg-2 control-label">Email</label>
+                            <div class="col-lg-10">
+                                <input type="email" class="form-control" id="contact-email" placeholder="you@example.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-msg" class="col-lg-2 control-label">Message</label>
+                            <div class="col-lg-10">
+                                <textarea class="form-control" rows="10"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success" type="submit">Submit</button>
+                        <a class="btn btn-default" data-dismiss="modal">Close</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--END MODAL-->
+
+    <!--SCRIPT-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!--END SCRIPT-->
+
+</body>
+
+</html>

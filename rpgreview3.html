@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GRC RPG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <meta name="description" content="How HTML accesses CSS, box model and scripting.">
+    <link rel="shortcut icon" href="assets/titleicon.png" />
+    <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed|Play|Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="css/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <!--STYLESHEETS-->
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/genre.css" type="text/css" rel="stylesheet">
+    <link href="css/master.css" type="text/css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: rgb(7, 58, 18);
+            background-image: url(css/rpgbackground.jpeg);
+            margin-top: 0;
+        }
+
+         ::selection {
+            background: #357435;
+            color: #fff;
+            /* WebKit/Blink Browsers */
+        }
+
+         ::-moz-selection {
+            background: #357435;
+            color: #fff;
+            /* Gecko Browsers */
+        }
+
+        a {
+            color: white;
+        }
+
+        a:hover,
+        a:focus {
+            color: #357535;
+        }
+    </style>
+</head>
+
+<body>
+    <!--NAVBAR TOP-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbartop" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Games Review Centre</a>
+            </div>
+
+            <div class="collapse navbar-collapse pull-right" id="navbartop">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="rpg.html">RPG</a></li>
+                    <li><a href="fps.html">FPS</a></li>
+                    <li><a href="arcade.html">Arcade</a></li>
+                    <li><a href="sim.html">Sim</a></li>
+                    <li><a href="sport.html">Sport</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!--END NAVBAR TOP-->
+
+    <!--CONTENT-->
+    <!--CAROUSEL-->
+    <div id="mycarousel" class="carousel slide" data-ride="carousel">
+        <div class="top-car-heading">
+            <a href="#review">
+                <h1>Fallout 4</h1>
+                <h1>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star-half-full"></span>
+                </h1>
+            </a>
+        </div>
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#mycarousel" data-slide-to="1"></li>
+            <li data-target="#mycarousel" data-slide-to="2"></li>
+            <li data-target="#mycarousel" data-slide-to="3"></li>
+            <li data-target="#mycarousel" data-slide-to="4"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item">
+                <img src="assets/screenshots/fallout1.jpg" alt="">
+                <div class="carousel-caption">
+                    <h3 class="car-headings">Bright night..</h3>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/screenshots/fallout2.jpg" alt="Second Image">
+                <div class="carousel-caption">
+                    <h3 class="car-headings">Large amounts of radiation...</h3>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/screenshots/fallout3.jpg" alt="Third Image">
+                <div class="carousel-caption">
+                    <h3 class="car-headings">Very annoying "reporters"</h3>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/screenshots/fallout4.jpg" alt="Fourth Image">
+                <div class="carousel-caption">
+                    <h3 class="car-headings">Heros...</h3>
+                </div>
+            </div>
+            <div class="item">
+                <img src="assets/screenshots/fallout5.jpg" alt="Fifth Image">
+                <div class="carousel-caption">
+                    <h3 class="car-headings">Fun to watch cinematic videos...</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END CAROUSEL-->
+
+    <!--GAMEREVIEW-->
+    <div class="container">
+        <div class="col-md-12">
+            <h1 id="review">Awesome post-apocalyptic game...</h1>
+            <p>
+                Fallout 4 is an action role-playing game developed by Bethesda and released world wide on the 10th of November 2015. The game is set in an open world, post-apocalyptic Boston and the Massachusetts region (The Commonwealth).
+            </p>
+
+            <p>
+                The player takes control of a character referred to as the “Sole Survivor”, who has been put into cryogenic stasis. The Sole Survivor is awaken just to witnesses his/her partner’s murder and son’s kidnapping. After this the player has to find the killer and find their son.
+            </p>
+
+            <p>
+                The gameplay is very similar to any other Bethesda RPG game. The game has a large amount of weapons and armours to choose from. These all can be customized and upgraded though the game's advanced crafting system. The player can also build settlements and recruit people from the commonwealth to live in these settlements.
+With the large amount of fun mechanics, the game is really enjoyable and all the quests are interesting.
+            </p>
+            <!--TRAILER VIDEO-->
+            <div class="video-container">
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/sis8GfE4BGQ" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <!--END TRAILER VIDEO-->
+        </div>
+        <!--END GAMEREVIEW-->
+
+
+        <!--PLATFORM SUPPORT INDICATOR-->
+        <div class="col-md-3">
+            <h1>PLATFORMS:</h1>
+        </div>
+        <div class="col-md-5">
+            <img class="platform-img" src="assets/platforms/xb-yes.png" alt="">
+            <img class="platform-img" src="assets/platforms/ps-yes.png" alt="">
+            <img class="platform-img" src="assets/platforms/pc-yes.png" alt="">
+            <img class="platform-img" src="assets/platforms/mobile-no.png" alt="">
+        </div>
+        <!--END PLATFORM SUPPORT INDICATOR-->
+    </div>
+    <!--END CONTENT-->
+
+    <!--FOOTER-->
+    <div class="navbar navbar-inverse navbar-static-bottom">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand hidden-xs hidden-smed" href="#">Games Review Centre</a>
+            </div>
+            <div class="pull-right">
+                <div class="text-center center-block">
+                    <a href="https://www.facebook.com/"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                    <a href="https://twitter.com/"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+                    <a href="https://plus.google.com/"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+                    <a href="https://www.youtube.com/"><i id="social-yt" class="fa fa-youtube-play fa-3x social"></i></a>
+                    <a href="https://www.reddit.com/"><i id="social-rd" class="fa fa-reddit-square  fa-3x social"></i></a>
+                    <a href="#contact" data-toggle="modal"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END FOOTER-->
+
+    <!--MODAL-->
+    <div class="modal fade" id="contact" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form class="form-horizontal">
+                    <div class="modal-header">
+                        <h4 align="center">Contact me</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="form-group">
+                            <label for="contact-name" class="col-lg-2 control-label">Name</label>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="contact-name" placeholder="Full Name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email" class="col-lg-2 control-label">Email</label>
+                            <div class="col-lg-10">
+                                <input type="email" class="form-control" id="contact-email" placeholder="you@example.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-msg" class="col-lg-2 control-label">Message</label>
+                            <div class="col-lg-10">
+                                <textarea class="form-control" rows="10"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success" type="submit">Submit</button>
+                        <a class="btn btn-default" data-dismiss="modal">Close</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--END MODAL-->
+
+    <!--SCRIPT-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/myscripts.js"></script>
+    <!--END SCRIPT-->
+</body>
+
+</html>
